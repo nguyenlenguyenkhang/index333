@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+.container{
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 100px 800px 80px ;
+	grid-template-areas: 
+		"aa bb ee" 
+		"cc cc cc "
+	    "dd dd dd "
+}
+.menu{
+/*
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+*/
+/*	align-items: center;*/
+/*
+	background: #FFFFFF;
+	border: 1px solid #000000;
+*/
+	
+}
+.menu01{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-area: aa
+}
+.menu02{
+		
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	grid-area: bb
+}
+.menu05{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	grid-area: ee;
+	
+}
+
+.menu03{
+	padding-top: 10px;
+	grid-area: cc
+}
+.menu04{
+	
+	grid-area: dd
+}
+
+                                          /*contanerone111111*/
+
+.containerone{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 700px 80px 250px 80px  ;
+	grid-template-areas: 
+		"one one two two " 
+		"three three three three "
+		"four four four four "
+		"five five five five "
+		
+}
+
+.content1{
+	grid-area: one ;
+	display: flex;
+	justify-content: center;
+	align-items:center
+}
+	
+
+
+.ct1 img{
+	border-radius: 50px;
+}
+.content2{
+	grid-area: two;
+	
+}
+.ct2{
+	margin: 100px
+	
+}
+.ct2 h1 {
+/*	text-align: center;*/
+	
+	font-size: 50px;
+/*	position:relative*/
+}
+/*
+.ct2 ul {
+
+	position: absolute;
+	right: 109px;
+}
+*/
+.content3{
+	grid-area: three
+}
+.content4{
+	grid-area: four
+}
+.content5{
+	grid-area: five
+}
+                                         /*contanertwo2222222*/
+.containertwo{
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 16% 16% 16% 16% 16% 16%;
+	grid-template-rows: 200px 400px 80px 400px 300px  ;
+	grid-template-areas: 
+		"chu chu chu chu chu chu "
+		"hinh1 hinh1 hinh2 hinh2 hinh3 hinh3"
+        "hinh4 hinh4 hinh5 hinh5 hinh6 hinh6"
+		"trong trong trong trong trong trong"
+		"hinh7 hinh7 hinh7 hinh7 hinh7 hinh7"
+		"trong1 trong1 trong1 trong1 trong1 trong1"
+} 
+.contenttwo{
+/*	background: #6ED570;*/
+/*	border: 1px solid ;*/
+	
+}
+.two1{
+	grid-area: chu;
+	
+}
+.text1 {
+	justify-content: center;
+	display: flex
+}
+.text1 h1{
+	font-size: 50px;
+}
+.text2{
+	justify-content: center;
+	display: flex
+}
+.text3 {
+	width: 50%;
+/*
+	height: 100px;
+	background: #F3E5E5;
+*/
+}
+.text3{
+	text-align: center
+}
+
+.two2{
+	grid-area: hinh1
+}
+.two2 img{
+	opacity:1;
+	transform: scale(1);
+	transition: all 0.3s linear
+}
+.two2:hover img{
+	opacity:1;
+	transform: scale(1.1)
+}
+.hinh1 img{
+	border-radius: 50px 0px 0px 0px;
+	
+}
+.two3{
+	grid-area: hinh2
+}
+.two3 img{
+	opacity:1;
+	transform: scale(1);
+	transition: all 0.3s linear
+}
+.two3:hover img{
+	opacity:1;
+	transform: scale(1.1)
+}
+
+.two4{
+	grid-area: hinh3;
+}
+.two4 img{
+	opacity:1;
+	transform: scale(1);
+	transition: all 0.3s linear
+}
+.two4:hover img{
+	opacity:1;
+	transform: scale(1.1)
+}
+.hinh3{
+	display: flex;
+	justify-content:flex-end}
+.hinh3 img{
+	border-radius: 0px 50px 0px 0px;
+	
+}
+
+
+.two5{
+	grid-area: hinh7
+}
+.two7{
+	grid-area: hinh7
+}
+.getin{
+	width: 80%;
+	height: 400px;
+	background:  #FFFFFF;
+	position: absolute;
+	left: 10%;
+	top: 3000px;
+	border-radius: 30px;
+/*
+	justify-content: center;
+	display: flex;
+*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.getin h1{
+	font-size: 50px;
+	text-align: center
+}
+.text5{
+	display: flex;
+	justify-content: center;
+
+}
+.text4{
+	width: 80%;
+	
+}
+/*                                                 three*/
+.containerthree{
+	display: grid;
+	justify-content: center;
+	
+	grid-template-columns: 32% 32% 32%;
+	grid-template-rows: 700px 80px 0px ;
+
+}
+
+.noidung{
+	width: 80%;
+	height: 680px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 20px;
+}
+.noidung img{
+	border-radius: 20px;
+	opacity:1;
+	transform: scale(0.95);
+	transition: all 0.3s linear
+}
+.noidung:hover img{
+	border-radius: 20px;
+	opacity:1;
+	transform: scale(1);
+	transition: all 0.3s linear;
+}
+.noidung h1{
+ text-align: center;
+}
+.three2 {
+	display: flex;
+	justify-content: center;
+}
+.three3 {
+	display: flex;
+	justify-content: flex-end;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px
+}
+.form input {
+	width: 100%
+}
+.input submit {
+	background: #AD1A1D
+}
+                                             
+.containerfour{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 600px 0px 0px 0px  ;
+
+}
+.footer{
+/*		background: #6ED570;*/
+	border: 1px solid ;
+	
+	
+}
+.footer a{
+	display: flex;
+	margin-top: 55px;
+	color: aliceblue;
+	font-size: 21px
+	
+}
+
+.footer1 a{
+	display: flex;
+	margin-top: 55px;
+	color: aliceblue;
+	font-size: 21px;
+	margin-left: 40px
+	}
+.footer3{
+	margin-top: 55px;
+	margin-left: 40px
+}
